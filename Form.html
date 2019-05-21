@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Register</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<style>
+  body
+  {
+    background-color: grey;
+  }
+
+
+  .foRm
+  {
+    padding-left: 30%;
+  }
+</style>
+<body>
+          
+  <div class="container">
+  
+    <form class="foRm" name="regform" action="connection.php" method="post">
+      <div class="row">
+        <div class="col-lg-7" style="background-color: #eee">
+          <div class="form-group">
+             <u><h2 style="text-align: center;">Register Form</h2></u>
+              <label for="exampleFormControlInput1" style="font-weight: bold;">Firstname</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" name="Name" placeholder="Vincent" required="" style="width: 95%">
+          </div>
+
+          <div class="form-group">
+              <label for="exampleFormControlInput1" style="font-weight: bold;">Email address</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" name="Email" placeholder="name@example.com" required="" style="width: 95%">
+          </div>
+
+          <div class="form-group">
+              <label for="exampleFormControlInput1" style="font-weight: bold;">Mobile Number</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" name="Mobile" placeholder="(+91)8838099555" required="" style="width: 95%">
+          </div>
+
+          <label style="font-weight: bold;">Gender&nbsp;&nbsp</label>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="gender" id="inlineRadio1" value="M" required="">
+            <label class="form-check-label" for="inlineRadio1">Male</label>
+          </div>
+
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="gender" id="inlineRadio2" value="F">
+            <label class="form-check-label" for="inlineRadio2">Female</label>
+          </div>
+
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="gender" id="inlineRadio3" value="O">
+            <label class="form-check-label" for="inlineRadio3">Others</label>
+          </div>
+
+          <div class="form-group">
+              <label for="exampleFormControlInput1" style="font-weight: bold;">Date of Birth</label>
+              <input type="date" class="form-control" id="exampleFormControlInput1" name="dob" placeholder="dd/mm/yyyy" required="" style="width: 95%">
+          </div>
+
+          <label for="exampleFormControlInput1" style="font-weight: bold;">School Name</label>
+          <div class="input-group" style="width: 95%;">
+           <div class="input-group">
+             <input type="text" class="form-control" aria-label="Text input with dropdown button" name="School">
+              <select style="border-radius: 3px;">
+                <option>Select Your Board</option>
+                <option>State Board</option>
+                <option>CBSE</option>
+              </select>
+           </div>
+          </div>
+
+          <label for="exampleFormControlInput1" style="font-weight: bold;">College Name</label>
+          <div class="input-group" style="width: 95%;">
+           <div class="input-group">
+            <input type="text" class="form-control" aria-label="Text input with dropdown button" name="College">
+            <select style="border-radius: 3px;">
+              <option>Select Your University</option>
+              <option>Thiruvalluvar University</option>
+              <option>University of Madras</option>
+              <option>Tamil University</option>
+              <option>Bharathidasan University</option>
+              <option>Annamalai University</option>
+              <option>Anna University</option>
+              <option>Alagappa University</option>
+              <option>Vels University</option>
+              <option>VIT University</option>
+              <option>Chettinad University</option>
+              <option>Saveetha University</option>
+              <option>Veltech University</option>
+            </select>
+           </div>
+          </div>
+
+            <div class="form-group">
+              <label for="exampleFormControlSelect1" style="font-weight: bold;">State</label>
+              <select class="form-control" id="exampleFormControlSelect1" name="State" required="" style="width: 95%;">
+                <option>Select Your State</option>
+                <option>Andhra Pradesh</option>
+                <option>Arunachal Pradesh</option>
+                <option>Assam</option>
+                <option>Bihar</option>
+                <option>Goa</option>
+                <option>Gujarat</option>
+                <option>Haryana</option>
+                <option>Himachal Pradesh</option>
+                <option>Jammu & Kashmir</option>
+                <option>Karnataka</option>
+                <option>Kerala</option>
+                <option>Madhya Pradesh</option>
+                <option>Maharashtra</option>
+                <option>Manipur</option>
+                <option>Meghalaya</option>
+                <option>Mizoram</option>
+                <option>Nagaland</option>
+                <option>Orissa</option>
+                <option>Punjab</option>
+                <option>Rajasthan</option>
+                <option>Sikkim</option>
+                <option>Tamil Nadu</option>
+                <option>Tripura</option>
+                <option>Uttar Pradesh</option>
+                <option>West Bengal</option>
+                <option>Chhattisgarh</option>
+                <option>Uttarakhand</option>
+                <option>Jharkhand</option>
+                <option>Telangana</option>
+              </select>
+            </div>
+
+              <div class="form-group">
+                  <label for="exampleFormControlTextarea1" style="font-weight: bold;">Address</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required="" name="Address" style="width: 95%"></textarea>
+              </div>
+
+              <div class="form-group">
+              <label for="exampleFormControlInput1" style="font-weight: bold;">Upload Resume</label>
+              <input type="file" class="form-control" id="exampleFormControlInput1" placeholder="Choose File" required="" name="Resume" style="width: 95%">
+              </div>
+              <button type="submit" onclick="return Register()" class="btn btn-primary" name="register">Register</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+
+
+
+
+</body>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+<script>
+  function Register()
+
+  {
+    var name = document.forms["regform"]["Name"];               
+    var email = document.forms["regform"]["Email"];    
+    var phone = document.forms["regform"]["Mobile"];  
+    var gender =  document.forms["regform"]["gender"];  
+    var dob = document.forms["regform"]["dob"]; 
+    var school = document.forms["regform"]["School"];
+    var college = document.forms["regform"]["College"]; 
+    var state = document.forms["regform"]["State"];
+    var address = document.forms["regform"]["Address"]; 
+    var resume = document.forms["regform"]["Resume"];
+  
+
+
+   var regex = /^[a-zA-Z]+$/;
+   if(regex.test(name.value) == false){
+   alert("Name must be in alphabets only");
+   name.focus();
+   return false;
+    }
+    if(name.value == " ")
+    {
+      alert("Name Field cannot be left empty");
+      name.focus();
+      return false;
+    }
+
+
+    var emai = /^(([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5}){1,25})+([;.](([a-zA-Z0-9_\-\.]+)@{[a-zA-Z0-9_\-\.]+0\.([a-zA-Z]{2,5}){1,25})+)*$/;
+    if(emai.test(email.value))
+    {
+    }
+    else{
+      alert("This is not a valid email address");
+      return false;
+    }
+
+
+    var pho = /^\(?\d{5}\)?-?\s*-?\d{5}$/;
+    if(pho.test(phone.value)){
+    }
+    else{
+      alert("This is not a valid phone number");
+      return false;
+  }
+
+
+    if (gender.value =="") 
+    {
+        window.alert("Please choose your gender."); 
+        gender.focus(); 
+        return false;
+    }
+
+    if (dob.value =="") 
+    {
+        window.alert("Please select your date of birth."); 
+        dob.focus(); 
+        return false;
+    }
+
+
+
+    var sch = /^[a-zA-Z]+$/;
+   if(sch.test(school.value) == false){
+   alert("SchoolName must be in alphabets only");
+   school.focus();
+   return false;
+    }
+    if(college.value == " ")
+    {
+      alert("SchoolName Field cannot be left empty");
+      school.focus();
+      return false;
+    }
+
+
+     var coll = /^[a-zA-Z]+$/;
+   if(coll.test(college.value) == false){
+   alert("CollegeName must be in alphabets only");
+   college.focus();
+   return false;
+    }
+    if(college.value == " ")
+    {
+      alert("SchoolName Field cannot be left empty");
+      college.focus();
+      return false;
+    }
+
+
+    if (state.value =="") 
+    {
+        window.alert("Please select your state"); 
+        state.focus(); 
+        return false;
+    }
+
+    if (address.value =="") 
+    {
+        window.alert("Please fill your address"); 
+        address.focus(); 
+        return false;
+    }
+
+
+    if (resume.value =="") 
+    {
+        window.alert("Please upload your resume"); 
+        resume.focus(); 
+        return false;
+    }
+        return true;
+  }
+</script>
+
+</html>
